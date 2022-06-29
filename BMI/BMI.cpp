@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <stack>
 #include <vector>
 using namespace std;
@@ -6,25 +6,25 @@ int main() {
     double w, bmi = 0;
     float m;
     unsigned short int t;
-    string imie;
+    string name;
     cin >> t;
     vector < string > s1;
     vector < string > s2;
     vector < string > s3;
     while (t--) {
-        cin >> imie >> m >> w;
+        cin >> name >> m >> w;
         bmi = (m / (w * w)) * 10000;
         if (bmi < 18.5)
         {
-            s1.push_back(imie);
+            s1.push_back(name);
         }
         else if (bmi > 18.5 && bmi < 25)
         {
-            s2.push_back(imie);
+            s2.push_back(name);
         }
         else
         {
-            s3.push_back(imie);
+            s3.push_back(name);
         }
     }
     cout << "niedowaga" << endl;
